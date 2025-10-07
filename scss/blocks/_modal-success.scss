@@ -1,0 +1,35 @@
+.modal-success {
+    $modal-width: 715px;
+
+    &__body {
+        max-width: $modal-width;
+        width: 100%;
+
+        @media(max-width: $breakpoint768) {
+            width: min(92%, $modal-width);
+        }
+    }
+    &__wrapper {
+        padding: 80px 60px;
+
+        @media(max-width: $breakpoint768) {
+            border-radius: 10px;
+            padding: 80px 50px;
+        }
+        @media(max-width: $breakpoint375) {
+            padding: 60px 30px;
+        }
+    }
+    &__close {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 24px;
+    
+        @media(max-width: $breakpoint480) {
+            width: 12px;
+            top: 24px;
+            right: 24px;
+        }
+    }
+}

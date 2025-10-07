@@ -1,0 +1,35 @@
+.modal-form-block {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 121%;
+        color: #b91c20;
+        text-align: center;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 20px;
+        }
+    }
+    &__subtitle {
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 20px;
+        }
+    }
+    &__top {
+        max-width: 600px;
+        width: 100%;
+    }
+}

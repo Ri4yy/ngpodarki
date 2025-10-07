@@ -1,0 +1,55 @@
+.catalog-menu-section {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 20px;
+        padding: 8px;
+        background: #e6e6e6;
+        transition: box-shadow .3s;
+
+        &:hover {
+            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+
+            & .catalog-menu-section__name {
+                color: $red;
+            }
+            & .catalog-menu-section__image-icon {
+                scale: 1.1;
+            }
+        }
+    }
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 110px;
+
+        &-icon {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: scale .3s;
+            transform-origin: center;
+        }
+    }
+    &__name {
+        margin-top: 12px;
+        
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 135%;
+        text-align: center;
+        color: #4e4e4e;
+
+        @media(max-width: $breakpoint1180) {
+            font-size: 18px;
+        }
+    }
+} 

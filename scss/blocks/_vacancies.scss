@@ -1,0 +1,190 @@
+.vacancies {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        @media(max-width: $breakpoint1024) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__item {
+        padding: 40px 36px;
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 25px;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.25);
+        background: $white;
+
+        @media(max-width: $breakpoint480) {
+            padding: 18px 16px;
+            border-radius: 20px;
+        }
+
+        &-top {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            @media(max-width: $breakpoint480) {
+                gap: 14px;
+            }
+
+            &-name {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 109%;
+                color: $red;
+
+                @media(max-width: $breakpoint480) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &-info {
+            &-title {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 146%;
+                color: #4e4e4e;
+
+                @media(max-width: $breakpoint480) {
+                    font-size: 20px;
+                }
+            }
+            &-text {
+                margin-top: 12px;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 75%;
+                color: $red;
+
+                @media(max-width: $breakpoint480) {
+                    margin-top: 6px;
+                    font-size: 24px;
+                }
+            }
+            &-wrapper-phone {
+                margin-top: 12px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                @media(max-width: $breakpoint480) {
+                    margin-top: 6px;
+                }
+
+                & span {
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #4e4e4e;
+
+                    @media(max-width: $breakpoint480) {
+                        font-size: 16px;
+                    }
+                }
+            }
+            &-phone {
+                display: block;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 100%;
+                color: $red;
+
+                @media(max-width: $breakpoint480) {
+                    font-size: 20px;
+                }
+            }
+        }
+        &-list {
+            margin-top: 6px;
+
+            display: flex;
+            flex-direction: column;
+
+            &-item {
+                position: relative;
+                padding-left: 32px;
+
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 120%;
+                color: #4e4e4e;
+
+                @media(max-width: $breakpoint480) {
+                    padding-left: 24px;
+                    font-size: 16px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 14px;
+                    top: 10px;
+
+                    border-radius: 50%;
+                    width: 4px;
+                    height: 4px;
+                    background: #4e4e4e;
+
+                    @media(max-width: $breakpoint480) {
+                        left: 10px;
+                    }
+                }
+
+                & span {
+                    color: $red;
+                }
+            }
+        }
+        &-body {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: 
+                grid-template-rows 0.5s ease-out, 
+                margin-top 0.5s ease-out;
+
+            &.is-open {
+                margin-top: 25px;
+                grid-template-rows: 1fr;
+
+                @media(max-width: $breakpoint480) {
+                    margin-top: 14px;
+                }
+            }
+
+            &-inner {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                overflow: hidden;
+
+                @media(max-width: $breakpoint480) {
+                    gap: 14px;
+                }
+            }
+        }
+
+        &-bottom {
+            margin-top: 25px;
+
+            @media(max-width: $breakpoint480) {
+                margin-top: 14px;
+            }
+
+            &-btn {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 135%;
+                text-decoration: underline !important;
+                color: #9f1014;
+
+                @media(max-width: $breakpoint480) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

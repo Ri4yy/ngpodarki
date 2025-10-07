@@ -1,0 +1,21 @@
+.catalog-sections-swiper {
+    padding: 30px !important;
+    margin: -30px !important;
+
+    &__slide {
+        height: auto !important;
+    }
+
+    & .catalog-section {
+
+        &-content {
+            transition: border 0.3s ease;
+        }
+        &:hover {
+
+            & .catalog-section-content {
+                border: 1px solid #b91c20;
+            }
+        }
+    }
+}

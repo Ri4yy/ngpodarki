@@ -1,0 +1,126 @@
+.timer {
+    position: relative;
+
+    @media(max-width: $breakpoint600) {
+        margin-top: 40px;
+    }
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        max-width: 1200px;
+        margin: 0 auto;
+
+        z-index: 2;
+
+        @media(max-width: $breakpoint600) {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-number {
+            font-weight: 700;
+            font-size: 128px;
+            line-height: 67%;
+            text-align: center;
+            color: #b91c20;
+
+            @media(max-width: $breakpoint1024) {
+                font-size: 90px;
+            }
+            @media(max-width: $breakpoint768) {
+                font-size: 72px;
+            }
+        }
+        &-text {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 239%;
+            text-align: center;
+            color: #b91c20;
+
+            @media(max-width: $breakpoint1024) {
+                font-size: 25px;
+            }
+        }
+        &-separator {
+            font-weight: 700;
+            font-size: 128px;
+            line-height: 67%;
+            color: #b91c20;
+
+            @media(max-width: $breakpoint1024) {
+                font-size: 90px;
+            }
+            @media(max-width: $breakpoint768) {
+                font-size: 72px;
+            }
+            @media(max-width: $breakpoint600) {
+                display: none;
+            }
+        }
+    }
+
+    &__bg {
+
+        &--lg {
+            position: absolute;
+            bottom: -90%;
+            left: 50%;
+            transform: translateX(-50%);
+    
+            width: 100%;
+            z-index: 1;
+    
+            @media(max-width: $breakpoint768) {
+                bottom: -75%;
+            }
+            @media(max-width: $breakpoint600) {
+                display: none;
+            }
+        }
+
+        &--sm {
+            display: none;
+
+            @media(max-width: $breakpoint600) {
+                display: block;
+
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+        
+                width: 100%;
+                z-index: 1;
+            }
+            & svg {
+                height: 450px;
+            }
+        }
+
+        & svg {
+            width: 100%;
+        }
+    }
+}
+
+// .snowflake {
+//     opacity: 0;
+//     transform: scale(0.5);
+//     transform-origin: center;
+//     transition: opacity 0.8s, transform 0.8s;
+//   }
+//   .snowflake.visible {
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+

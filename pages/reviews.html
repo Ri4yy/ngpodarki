@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="../assets/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header class="header header--secondary">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="/" class="header__logo">
+                    <div class="header__logo-wrapper">
+                        <img src="/assets/img/icons/logo.svg" alt="logo">
+                    </div>
+                </a>
+                <nav class="menu">
+                    <ul class="menu-nav">
+                        <li class="menu-nav__item dropdown-menu dropdown-menu--main">
+                            <a href="catalog.html" class="menu-nav__link menu-nav__link--active dropdown-menu__toggle">
+                                каталог
+                                <svg width="19" height="11" class="dropdown-menu__toggle-icon" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5327 0.791373C16.9366 0.409903 16.1522 0.514915 15.6776 1.03973L11.4667 5.69522C10.4139 6.85918 8.58611 6.85918 7.53331 5.69522L3.32245 1.03973C2.84776 0.514915 2.06335 0.409903 1.46733 0.791373C0.704329 1.27972 0.571764 2.34073 1.19116 3.0018L7.56488 9.80427C8.61264 10.9225 10.3874 10.9225 11.4351 9.80427L17.8088 3.0018C18.4282 2.34073 18.2957 1.27972 17.5327 0.791373Z" fill="#B91C20" />
+                                </svg>
+                            </a>
+                            <!-- <div class="dropdown-menu__container">
+                                <div class="catalog-menu">
+                                    <div class="catalog-menu__wrapper">
+                                        <div class="catalog-menu__side">
+                                            <ul class="catalog-menu-section">
+                                                <li class="catalog-menu-section__item">
+                                                    <a href="" class="catalog-menu-section__head">
+                                                        <span class="catalog-menu-section__head-name">Печи и камины</span>
+                                                        <svg width="11" height="14" class="catalog-menu-section__head-arrow" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.8145 7L2.06095 -2.38418e-07L0 1.64576L6.6999 7L0 12.3531L2.05949 14L10.8145 7Z" />
+                                                        </svg>
+                                                    </a>
+                                                    <div class="catalog-menu__subsection">
+                                                        <div class="catalog-menu__subsection-wrapper">
+                                                            <p class="catalog-menu__subsection-title">Распределительное оборудование</p>
+                                                            <div class="catalog-menu__subsection-list">
+                                                                <ul class="catalog-menu-subsection">
+                                                                    <li class="catalog-menu-subsection__item">
+                                                                        <a href="" class="catalog-menu-subsection__link">
+                                                                            <img src="./assets/img/other/section-icon.png" class="catalog-menu-subsection__link-icon" alt="">
+                                                                            <div class="catalog-menu-subsection__link-content">
+                                                                                <span class="catalog-menu-subsection__link-name">Печи и камины</span>
+                                                                                <span class="catalog-menu-subsection__link-count">(16 шт)</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="catalog-menu-section__item">
+                                                    <a href="" class="catalog-menu-section__head">
+                                                        <span class="catalog-menu-section__head-name">Дымоходы и вентиляция</span>
+                                                        <svg width="11" height="14" class="catalog-menu-section__head-arrow" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.8145 7L2.06095 -2.38418e-07L0 1.64576L6.6999 7L0 12.3531L2.05949 14L10.8145 7Z" />
+                                                        </svg>
+                                                    </a>
+                                                    <div class="catalog-menu__subsection">
+                                                        <div class="catalog-menu__subsection-wrapper">
+                                                            <p class="catalog-menu__subsection-title">Шкафы управления и автоматизации</p>
+                                                            <div class="catalog-menu__subsection-list">
+                                                                <ul class="catalog-menu-subsection">
+                                                                    <li class="catalog-menu-subsection__item">
+                                                                        <a href="" class="catalog-menu-subsection__link">Щ070</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="catalog-menu-section__item">
+                                                    <a href="" class="catalog-menu-section__head">
+                                                        <span class="catalog-menu-section__head-name">Крепёж и аксессуары</span>
+                                                        <svg width="11" height="14" class="catalog-menu-section__head-arrow" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.8145 7L2.06095 -2.38418e-07L0 1.64576L6.6999 7L0 12.3531L2.05949 14L10.8145 7Z" />
+                                                        </svg>
+                                                    </a>
+                                                    <div class="catalog-menu__subsection">
+                                                        <div class="catalog-menu__subsection-wrapper">
+                                                            <p class="catalog-menu__subsection-title">Системы оперативного тока</p>
+                                                            <div class="catalog-menu__subsection-list">
+                                                                <ul class="catalog-menu-subsection">
+                                                                    <li class="catalog-menu-subsection__item">
+                                                                        <a href="" class="catalog-menu-subsection__link">Щ070</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="catalog-menu-section__item">
+                                                    <a href="" class="catalog-menu-section__head">
+                                                        <span class="catalog-menu-section__head-name">Банные товары</span>
+                                                        <svg width="11" height="14" class="catalog-menu-section__head-arrow" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.8145 7L2.06095 -2.38418e-07L0 1.64576L6.6999 7L0 12.3531L2.05949 14L10.8145 7Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="company.html" class="menu-nav__link">О компании</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="payment.html" class="menu-nav__link">Оплата и доставка</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="reviews.html" class="menu-nav__link">Отзывы</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="vacancies.html" class="menu-nav__link">Вакансии</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__right">
+                    <div class="header__contacts">
+                        <a href="tel:" class="header__contacts-phone">+7 (8352) 36-83-71</a>
+                        <button class="header__contacts-callback">Заказать обратный звонок</button>
+                    </div>
+                </div>
+                <button class="btn-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Хлебные крошки -->
+        <section class="section section--breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item">
+                        <a href="../index.html" class="breadcrumb__item-link">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <span class="breadcrumb__item-link breadcrumb__item-link--active">Отзывы</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="section section--swiper-reviews">
+            <div class="container">
+                <h2>Отзывы</h2>
+                <div class="container__inner">
+                    <div class="reviews">
+                        <div class="reviews__wrapper">
+                            <div class="swiper swiper-reviews">
+                                <div class="swiper-wrapper swiper-reviews__wrapper">
+                                    <div class="swiper-slide swiper-reviews__item">
+                                        <div class="reviews__item">
+                                            <div class="reviews__item-content">
+                                                <div class="reviews__item-top">
+                                                    <span class="reviews__item-top-name">Мария</span>
+                                                    <span class="reviews__item-top-date">03.01.2022 16:46:00</span>
+                                                </div>
+                                                <div class="reviews__item-body">
+                                                    <p>Конфеты свежие! Подарки детям понравился. Привезли в срок. Упаковка красивая очень.</p>
+                                                </div>
+                                                <div class="reviews__item-bottom">
+                                                    <a href="/pages/reviews.html" class="reviews__item-bottom-link">Читать полностью</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-reviews__item">
+                                        <div class="reviews__item">
+                                            <div class="reviews__item-content">
+                                                <div class="reviews__item-top">
+                                                    <span class="reviews__item-top-name">Мария</span>
+                                                    <span class="reviews__item-top-date">03.01.2022 16:46:00</span>
+                                                </div>
+                                                <div class="reviews__item-body">
+                                                    <p>Конфеты свежие! Подарки детям понравился. Привезли в срок. Упаковка красивая очень.</p>
+                                                </div>
+                                                <div class="reviews__item-bottom">
+                                                    <a href="/pages/reviews.html" class="reviews__item-bottom-link">Читать полностью</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-reviews__item">
+                                        <div class="reviews__item">
+                                            <div class="reviews__item-content">
+                                                <div class="reviews__item-top">
+                                                    <span class="reviews__item-top-name">Мария</span>
+                                                    <span class="reviews__item-top-date">03.01.2022 16:46:00</span>
+                                                </div>
+                                                <div class="reviews__item-body">
+                                                    <p>Конфеты свежие! Подарки детям понравился. Привезли в срок. Упаковка красивая очень.</p>
+                                                </div>
+                                                <div class="reviews__item-bottom">
+                                                    <a href="/pages/reviews.html" class="reviews__item-bottom-link">Читать полностью</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-reviews__item">
+                                        <div class="reviews__item">
+                                            <div class="reviews__item-content">
+                                                <div class="reviews__item-top">
+                                                    <span class="reviews__item-top-name">Мария</span>
+                                                    <span class="reviews__item-top-date">03.01.2022 16:46:00</span>
+                                                </div>
+                                                <div class="reviews__item-body">
+                                                    <p>Конфеты свежие! Подарки детям понравился. Привезли в срок. Упаковка красивая очень.</p>
+                                                </div>
+                                                <div class="reviews__item-bottom">
+                                                    <a href="/pages/reviews.html" class="reviews__item-bottom-link">Читать полностью</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__bottom">
+                            <div class="swiper-pagination-template">
+                                <div class="swiper-pagination-template__btn reviews-btn-prev">
+                                    <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.5459 22.7219C14.3437 21.9386 14.3444 20.6533 13.5475 19.8691L6.79047 13.2205C5.99411 12.4369 5.99412 11.1529 6.79047 10.3693L13.5475 3.7207C14.3444 2.93652 14.3437 1.65128 13.5459 0.867968L13.4263 0.750522C12.6483 -0.0133076 11.4019 -0.0133082 10.6239 0.750521L0.828554 10.3678C0.0301278 11.1517 0.0301297 12.4381 0.828556 13.222L10.6239 22.8393C11.4019 23.6032 12.6483 23.6031 13.4263 22.8393L13.5459 22.7219Z" />
+                                    </svg>
+                                </div>
+                                <div class="swiper-pagination-template__pagination reviews-pagination swiper-pagination"></div>
+                                <div class="swiper-pagination-template__btn reviews-btn-next">
+                                    <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.20214 0.868153C0.404324 1.65146 0.403623 2.9367 1.20058 3.72088L7.95758 10.3695C8.75393 11.1531 8.75393 12.4371 7.95758 13.2207L1.20058 19.8693C0.403623 20.6535 0.404324 21.9387 1.20214 22.7221L1.32176 22.8395C2.09974 23.6033 3.34615 23.6033 4.12412 22.8395L13.9195 13.2222C14.7179 12.4383 14.7179 11.1519 13.9195 10.368L4.12412 0.750704C3.34615 -0.0131245 2.09974 -0.0131226 1.32176 0.750706L1.20214 0.868153Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Оставить отзыв -->
+        <section class="section section--review">
+            <div class="container">
+                <div class="reviews-form">
+                    <div class="reviews-form__wrapper">
+                        <div class="reviews-form__inner">
+                            <div class="reviews-form__inner-content">
+                                <h3 class="reviews-form__inner-content-title">Хотите оставить отзыв?</h3>
+                                <div class="reviews-form__inner-form">
+                                    <form action="" class="form form-reviews">
+                                        <div class="form-reviews__wrapper">
+                                            <label class="form-reviews__item form__area">
+                                                <input type="text" class="input" name="name" placeholder="Ваше имя" required>
+                                                <small class="form__area-error"></small>
+                                            </label>
+                                            <label class="form-reviews__item form__area">
+                                                <textarea class="textarea" name="message" placeholder="Ваше сообщение"></textarea>
+                                                <small class="form__area-error"></small>
+                                            </label>
+                                        </div>
+                                        <div class="form-reviews__bottom">
+                                            <button type="submit" class="btn form-reviews__btn">
+                                                <span>Отправить</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="reviews-form__inner-image">
+                                <img src="/assets/img/photo/form-2.png" alt="reviews form">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <div class="footer__left">
+                        <div class="footer__left-inner">
+                            <a href="/" class="footer__logo">
+                                <div class="footer__logo-wrapper">
+                                    <img src="/assets/img/icons/logo.svg" alt="logo">
+                                </div>
+                            </a>
+                            <div class="footer__social">
+                                <ul class="social-list">
+                                    <li class="social-list__item">
+                                        <a href="" class="social-list__link">
+                                            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <foreignObject x="-10.8448" y="-14.8448" width="72.671" height="72.671">
+                                                  <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(7.42px);clip-path:url(#bgblur_0_48_3872_clip_path);height:100%;width:100%"></div>
+                                                </foreignObject>
+                                                <g filter="url(#filter0_d_48_3872)" data-figma-bg-blur-radius="14.8448">
+                                                  <path d="M25.4907 0C37.3601 0 46.9814 9.62139 46.9814 21.4907C46.9814 33.36 37.3601 42.9814 25.4907 42.9814C21.6929 42.9875 17.9618 41.9825 14.6809 40.0694L4.00863 42.9814L6.91417 32.3048C4.99955 29.0229 3.99369 25.2903 4.00003 21.4907C4.00003 9.62139 13.6214 0 25.4907 0ZM18.1667 11.3901L17.7369 11.4073C17.4586 11.4242 17.1867 11.4973 16.9374 11.6222C16.7043 11.7542 16.4915 11.9192 16.3056 12.1122C16.0477 12.355 15.9016 12.5656 15.7447 12.7698C14.9498 13.8033 14.5218 15.0721 14.5283 16.3759C14.5326 17.429 14.8077 18.4541 15.2375 19.4126C16.1165 21.351 17.5628 23.4034 19.4712 25.3053C19.9311 25.7631 20.3824 26.223 20.8681 26.6506C23.2393 28.7384 26.0651 30.244 29.1205 31.0476L30.3412 31.2346C30.7388 31.2561 31.1363 31.226 31.5361 31.2067C32.162 31.1743 32.7731 31.0049 33.3263 30.7102C33.6077 30.5653 33.8823 30.4075 34.1493 30.2374C34.1493 30.2374 34.2418 30.1772 34.418 30.044C34.7081 29.8291 34.8865 29.6765 35.1272 29.4251C35.3055 29.2403 35.4603 29.0232 35.5785 28.7761C35.7461 28.4258 35.9137 27.7574 35.9825 27.2008C36.0341 26.7753 36.019 26.5432 36.0126 26.3992C36.004 26.1692 35.8127 25.9307 35.6043 25.8297L34.3535 25.2688C34.3535 25.2688 32.4838 24.4543 31.3405 23.9342C31.2209 23.882 31.0927 23.8521 30.9623 23.8461C30.8152 23.831 30.6667 23.8475 30.5265 23.8946C30.3864 23.9417 30.258 24.0182 30.1499 24.119C30.1392 24.1147 29.9952 24.2372 28.4414 26.1198C28.3522 26.2396 28.2294 26.3302 28.0885 26.38C27.9477 26.4297 27.7952 26.4364 27.6506 26.3992C27.5106 26.3616 27.3734 26.3142 27.2401 26.2573C26.9736 26.1456 26.8812 26.1026 26.6985 26.0252C25.4651 25.487 24.3231 24.7598 23.3137 23.8697C23.0429 23.6333 22.7915 23.3754 22.5336 23.1262C21.6881 22.3164 20.9513 21.4005 20.3416 20.4011L20.2148 20.197C20.1237 20.0598 20.0501 19.9118 19.9956 19.7564C19.9139 19.4405 20.1267 19.1869 20.1267 19.1869C20.1267 19.1869 20.6489 18.6152 20.8917 18.3058C21.1281 18.0049 21.328 17.7126 21.4569 17.5042C21.7105 17.0959 21.79 16.6768 21.6568 16.3523C21.0551 14.8823 20.4318 13.4188 19.7914 11.966C19.6646 11.6781 19.2885 11.4717 18.9468 11.4309C18.8308 11.418 18.7147 11.4051 18.5987 11.3965C18.3101 11.3822 18.0209 11.3851 17.7326 11.4051L18.1667 11.3901Z" fill="url(#paint0_linear_48_3872)" />
+                                                  <path d="M25.4912 0.639648C37.0068 0.639904 46.3415 9.97468 46.3418 21.4902C46.3418 33.006 37.0069 42.3415 25.4912 42.3418H25.4893C21.8051 42.3477 18.1856 41.3723 15.0029 39.5166L14.7715 39.3818L14.5127 39.4521L4.91895 42.0693L7.53125 32.4727L7.60156 32.2139L7.4668 31.9824C5.60952 28.7988 4.63357 25.1779 4.63965 21.4922V21.4902C4.6399 9.97452 13.9754 0.639648 25.4912 0.639648ZM18.6309 10.7578C18.317 10.7422 18.002 10.7448 17.6885 10.7666V10.7695C17.3273 10.7928 16.974 10.8877 16.6504 11.0498L16.6367 11.0576L16.6221 11.0654C16.3353 11.2278 16.0734 11.4307 15.8447 11.668C15.7028 11.8037 15.5878 11.9335 15.4912 12.0518L15.2373 12.3799C14.4109 13.4544 13.942 14.7583 13.8926 16.1084L13.8887 16.3789C13.8935 17.5416 14.1964 18.6559 14.6533 19.6748L14.6543 19.6768C15.5128 21.5702 16.8806 23.5473 18.6582 25.3916L19.0195 25.7588C19.3584 26.0961 19.7074 26.4492 20.0732 26.792L20.4453 27.1309C22.8913 29.2844 25.8063 30.837 28.958 31.666L28.9902 31.6748L29.0234 31.6797L30.2441 31.8672L30.2754 31.8721L30.3066 31.873C30.7467 31.8968 31.1922 31.8639 31.5674 31.8457H31.5693C32.2887 31.8085 32.9912 31.614 33.627 31.2754L33.626 31.2744C33.9222 31.1215 34.212 30.9564 34.4932 30.7773L34.498 30.7734H34.499L34.5 30.7725L34.502 30.7715L34.5254 30.7559C34.5399 30.7461 34.5595 30.7317 34.585 30.7139C34.6353 30.6785 34.7073 30.6277 34.7988 30.5586C35.1132 30.3258 35.3202 30.1488 35.5898 29.8672L35.5889 29.8662C35.8117 29.6348 36.0056 29.3626 36.1543 29.0518L36.1553 29.0527C36.3644 28.6157 36.5441 27.8711 36.6172 27.2793L36.6182 27.2773C36.6754 26.8045 36.6585 26.5321 36.6514 26.375H36.6523C36.6419 26.097 36.5261 25.858 36.3975 25.6846C36.2671 25.5089 36.0886 25.3536 35.8828 25.2539L35.875 25.25L35.8662 25.2461L34.6152 24.6846L34.6094 24.6826V24.6816H34.6074C34.6065 24.6813 34.6051 24.6804 34.6035 24.6797C34.6 24.6781 34.5947 24.6758 34.5879 24.6729C34.5741 24.6668 34.5537 24.658 34.5273 24.6465C34.4741 24.6233 34.3962 24.589 34.2998 24.5469C34.107 24.4625 33.8377 24.345 33.5332 24.2109L31.6055 23.3516L31.5967 23.3477L31.4502 23.292C31.3132 23.2466 31.1707 23.2196 31.0264 23.21H31.0273C31.0244 23.2097 31.0215 23.2093 31.0186 23.209C31.0098 23.2084 31.001 23.2074 30.9922 23.207L30.9912 23.208C30.7654 23.1898 30.5383 23.2159 30.3232 23.2881C30.115 23.358 29.9233 23.4694 29.7578 23.6133C29.7455 23.6225 29.7352 23.6291 29.7295 23.6338C29.6945 23.6628 29.6624 23.6944 29.6387 23.7188C29.5866 23.7722 29.5098 23.8568 29.3926 23.9912C29.155 24.2635 28.7259 24.7706 27.9482 25.7129L27.9375 25.7246L27.9277 25.7383C27.9144 25.7559 27.8958 25.769 27.875 25.7764C27.8541 25.7837 27.8311 25.7848 27.8096 25.7793C27.7011 25.7499 27.5946 25.7131 27.4912 25.6689L27.4873 25.667C27.2077 25.5497 27.1635 25.5276 26.9531 25.4385H26.9541C25.7818 24.9269 24.6967 24.2355 23.7373 23.3896L23.7344 23.3877C23.4799 23.1655 23.2546 22.9329 22.9785 22.666L22.9766 22.6641L22.6787 22.3701C21.9968 21.6733 21.396 20.9004 20.8877 20.0674L20.8848 20.0635L20.7588 19.8594L20.7529 19.8516L20.748 19.8428L20.6641 19.6982C20.6478 19.6656 20.6346 19.6316 20.6211 19.5977C20.6229 19.5935 20.6253 19.59 20.627 19.5869C20.6418 19.5706 20.6622 19.5485 20.6865 19.5215C20.7402 19.462 20.8154 19.3798 20.8975 19.2871C21.0582 19.1058 21.26 18.8716 21.3945 18.7002C21.6452 18.3812 21.8584 18.0697 22 17.8408L22.001 17.8418C22.2922 17.3727 22.4674 16.7786 22.2891 16.2207L22.249 16.1094C21.796 15.0027 21.3308 13.9 20.8555 12.8027L20.377 11.708C20.2446 11.4076 20.0071 11.1952 19.7822 11.0586C19.5526 10.9191 19.2853 10.8273 19.0225 10.7959L19.0176 10.7949L18.6455 10.7588L18.6377 10.7578H18.6309Z" stroke="#FFFCF7" stroke-opacity="0.28" stroke-width="1.27972" />
+                                                </g>
+                                                <defs>
+                                                  <filter id="filter0_d_48_3872" x="-10.8448" y="-14.8448" width="72.671" height="72.671" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    <feOffset dy="4" />
+                                                    <feGaussianBlur stdDeviation="2" />
+                                                    <feComposite in2="hardAlpha" operator="out" />
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_48_3872" />
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_48_3872" result="shape" />
+                                                  </filter>
+                                                  <clipPath id="bgblur_0_48_3872_clip_path" transform="translate(10.8448 14.8448)">
+                                                    <path d="M25.4907 0C37.3601 0 46.9814 9.62139 46.9814 21.4907C46.9814 33.36 37.3601 42.9814 25.4907 42.9814C21.6929 42.9875 17.9618 41.9825 14.6809 40.0694L4.00863 42.9814L6.91417 32.3048C4.99955 29.0229 3.99369 25.2903 4.00003 21.4907C4.00003 9.62139 13.6214 0 25.4907 0ZM18.1667 11.3901L17.7369 11.4073C17.4586 11.4242 17.1867 11.4973 16.9374 11.6222C16.7043 11.7542 16.4915 11.9192 16.3056 12.1122C16.0477 12.355 15.9016 12.5656 15.7447 12.7698C14.9498 13.8033 14.5218 15.0721 14.5283 16.3759C14.5326 17.429 14.8077 18.4541 15.2375 19.4126C16.1165 21.351 17.5628 23.4034 19.4712 25.3053C19.9311 25.7631 20.3824 26.223 20.8681 26.6506C23.2393 28.7384 26.0651 30.244 29.1205 31.0476L30.3412 31.2346C30.7388 31.2561 31.1363 31.226 31.5361 31.2067C32.162 31.1743 32.7731 31.0049 33.3263 30.7102C33.6077 30.5653 33.8823 30.4075 34.1493 30.2374C34.1493 30.2374 34.2418 30.1772 34.418 30.044C34.7081 29.8291 34.8865 29.6765 35.1272 29.4251C35.3055 29.2403 35.4603 29.0232 35.5785 28.7761C35.7461 28.4258 35.9137 27.7574 35.9825 27.2008C36.0341 26.7753 36.019 26.5432 36.0126 26.3992C36.004 26.1692 35.8127 25.9307 35.6043 25.8297L34.3535 25.2688C34.3535 25.2688 32.4838 24.4543 31.3405 23.9342C31.2209 23.882 31.0927 23.8521 30.9623 23.8461C30.8152 23.831 30.6667 23.8475 30.5265 23.8946C30.3864 23.9417 30.258 24.0182 30.1499 24.119C30.1392 24.1147 29.9952 24.2372 28.4414 26.1198C28.3522 26.2396 28.2294 26.3302 28.0885 26.38C27.9477 26.4297 27.7952 26.4364 27.6506 26.3992C27.5106 26.3616 27.3734 26.3142 27.2401 26.2573C26.9736 26.1456 26.8812 26.1026 26.6985 26.0252C25.4651 25.487 24.3231 24.7598 23.3137 23.8697C23.0429 23.6333 22.7915 23.3754 22.5336 23.1262C21.6881 22.3164 20.9513 21.4005 20.3416 20.4011L20.2148 20.197C20.1237 20.0598 20.0501 19.9118 19.9956 19.7564C19.9139 19.4405 20.1267 19.1869 20.1267 19.1869C20.1267 19.1869 20.6489 18.6152 20.8917 18.3058C21.1281 18.0049 21.328 17.7126 21.4569 17.5042C21.7105 17.0959 21.79 16.6768 21.6568 16.3523C21.0551 14.8823 20.4318 13.4188 19.7914 11.966C19.6646 11.6781 19.2885 11.4717 18.9468 11.4309C18.8308 11.418 18.7147 11.4051 18.5987 11.3965C18.3101 11.3822 18.0209 11.3851 17.7326 11.4051L18.1667 11.3901Z" />
+                                                  </clipPath>
+                                                  <linearGradient id="paint0_linear_48_3872" x1="37.5" y1="-3.7656e-07" x2="25.4907" y2="42.9814" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#6BF86B" />
+                                                    <stop offset="1" stop-color="#45CC55" />
+                                                  </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="" class="social-list__link">
+                                            <svg width="55" height="47" viewBox="0 0 55 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <foreignObject x="-9.86334" y="-14.3091" width="74.9376" height="67.2487">
+                                                  <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(7.42px);clip-path:url(#bgblur_0_48_3873_clip_path);height:100%;width:100%"></div>
+                                                </foreignObject>
+                                                <g filter="url(#filter0_d_48_3873)" data-figma-bg-blur-radius="14.8448">
+                                                  <path d="M50.2174 3.75119C49.591 10.3493 46.8766 26.3853 45.4985 33.7769C44.9139 36.9089 43.7446 37.9529 42.6588 38.0782C40.2367 38.287 38.3993 36.4913 36.0607 34.9462C32.3858 32.5241 30.2978 31.0207 26.7481 28.6821C22.6139 25.9677 25.2865 24.4643 27.6669 22.0422C28.2933 21.4158 38.9839 11.6857 39.1927 10.8087C39.2217 10.6759 39.2179 10.538 39.1815 10.407C39.1451 10.276 39.0773 10.1558 38.9839 10.057C38.7333 9.8482 38.3993 9.93172 38.1069 9.97348C37.7311 10.057 31.8847 13.9407 20.4841 21.6246C18.8137 22.7521 17.3103 23.3368 15.974 23.295C14.4706 23.2533 11.6309 22.4598 9.50111 21.7499C6.8702 20.9147 4.82395 20.4553 4.99099 18.9937C5.07451 18.242 6.11852 17.4903 8.08126 16.6969C20.2753 11.3933 28.3768 7.88547 32.4275 6.21505C44.0369 1.37085 46.4173 0.535645 48.0042 0.535645C48.3382 0.535645 49.1317 0.619163 49.6328 1.03677C50.0504 1.37085 50.1757 1.83022 50.2174 2.1643C50.1757 2.41486 50.2592 3.16655 50.2174 3.75119Z" fill="#1C92B9" />
+                                                  <path d="M48.0039 1.17529C48.1272 1.17529 48.3582 1.19182 48.6055 1.25146C48.858 1.31242 49.0766 1.40635 49.2227 1.52783V1.52881L49.2334 1.53662C49.4478 1.70826 49.5358 1.9491 49.5732 2.19092C49.567 2.27879 49.5646 2.36781 49.5654 2.44287C49.5668 2.56748 49.5731 2.71325 49.5781 2.85498C49.5885 3.14651 49.5968 3.44129 49.5801 3.69092C48.9567 10.2567 46.2477 26.2658 44.8691 33.6597C44.3001 36.7076 43.2386 37.362 42.5938 37.4409C41.572 37.5263 40.6458 37.1986 39.6514 36.6177C39.1505 36.3251 38.6451 35.9767 38.1074 35.5952C37.5762 35.2183 37.0093 34.8065 36.4131 34.4126V34.4116L35.1064 33.5454C33.8622 32.7149 32.7865 31.9825 31.7178 31.2544C30.2929 30.2836 28.8798 29.3202 27.1006 28.1479L27.0996 28.147L26.7471 27.9067C25.9785 27.3599 25.5713 26.9087 25.3799 26.5435C25.1856 26.1726 25.1959 25.8599 25.3496 25.5112C25.5229 25.1184 25.8767 24.6886 26.3916 24.1704C26.6439 23.9166 26.9195 23.6561 27.2148 23.3755C27.5063 23.0986 27.8144 22.8046 28.1191 22.4946C28.4252 22.1886 31.2269 19.6256 34.0254 16.9849C35.415 15.6736 36.7962 14.3499 37.8447 13.2974C38.3681 12.772 38.8154 12.3081 39.1406 11.9438C39.3025 11.7626 39.4414 11.5968 39.5469 11.4565C39.5993 11.3867 39.6502 11.3152 39.6924 11.2446C39.7282 11.1847 39.7859 11.0807 39.8154 10.9565L39.8174 10.9448C39.8685 10.7103 39.8621 10.4671 39.7979 10.2358C39.7336 10.0045 39.614 9.79221 39.4492 9.61768L39.4229 9.59033L39.3936 9.56592L39.2871 9.48682C39.0368 9.32101 38.7717 9.28179 38.5615 9.28174C38.3498 9.28174 38.1127 9.32659 38.0166 9.34033L37.9922 9.34326L37.9678 9.34912C37.846 9.37627 37.7246 9.44052 37.6738 9.46729C37.594 9.50938 37.4956 9.56548 37.3828 9.63232C37.1559 9.76675 36.8453 9.95947 36.4541 10.2085C35.67 10.7076 34.5437 11.4441 33.0762 12.4155C31.6082 13.3872 29.7956 14.5961 27.6377 16.0425L20.126 21.0942C18.6042 22.1214 17.3071 22.626 16.2109 22.6558H15.9922C15.3151 22.637 14.2862 22.4437 13.1279 22.1528C11.9832 21.8654 10.7566 21.4942 9.70312 21.1431L9.69434 21.1401L7.8623 20.564C7.32386 20.3878 6.85997 20.2188 6.47852 20.0317C6.10503 19.8485 5.8791 19.679 5.75488 19.5239C5.64954 19.3923 5.60498 19.2582 5.62695 19.0659V19.064C5.63886 18.9586 5.73959 18.723 6.21094 18.3755C6.6647 18.0409 7.35998 17.6791 8.32129 17.2905L8.3291 17.2866L8.33691 17.2837C20.5336 11.979 28.6283 8.47361 32.6719 6.80615L32.6738 6.80518C38.4811 4.38201 41.9645 2.96891 44.1924 2.16064C46.4312 1.34843 47.3316 1.17533 48.0039 1.17529Z" stroke="#FFFCF7" stroke-opacity="0.28" stroke-width="1.27972" />
+                                                </g>
+                                                <defs>
+                                                  <filter id="filter0_d_48_3873" x="-9.86334" y="-14.3091" width="74.9376" height="67.2487" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    <feOffset dy="4" />
+                                                    <feGaussianBlur stdDeviation="2" />
+                                                    <feComposite in2="hardAlpha" operator="out" />
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" />
+                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_48_3873" />
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_48_3873" result="shape" />
+                                                  </filter>
+                                                  <clipPath id="bgblur_0_48_3873_clip_path" transform="translate(9.86334 14.3091)">
+                                                    <path d="M50.2174 3.75119C49.591 10.3493 46.8766 26.3853 45.4985 33.7769C44.9139 36.9089 43.7446 37.9529 42.6588 38.0782C40.2367 38.287 38.3993 36.4913 36.0607 34.9462C32.3858 32.5241 30.2978 31.0207 26.7481 28.6821C22.6139 25.9677 25.2865 24.4643 27.6669 22.0422C28.2933 21.4158 38.9839 11.6857 39.1927 10.8087C39.2217 10.6759 39.2179 10.538 39.1815 10.407C39.1451 10.276 39.0773 10.1558 38.9839 10.057C38.7333 9.8482 38.3993 9.93172 38.1069 9.97348C37.7311 10.057 31.8847 13.9407 20.4841 21.6246C18.8137 22.7521 17.3103 23.3368 15.974 23.295C14.4706 23.2533 11.6309 22.4598 9.50111 21.7499C6.8702 20.9147 4.82395 20.4553 4.99099 18.9937C5.07451 18.242 6.11852 17.4903 8.08126 16.6969C20.2753 11.3933 28.3768 7.88547 32.4275 6.21505C44.0369 1.37085 46.4173 0.535645 48.0042 0.535645C48.3382 0.535645 49.1317 0.619163 49.6328 1.03677C50.0504 1.37085 50.1757 1.83022 50.2174 2.1643C50.1757 2.41486 50.2592 3.16655 50.2174 3.75119Z" />
+                                                  </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__right-wrapper">
+                            <div class="footer__right-col">
+                                <ul class="footer__right-menu">
+                                    <li class="footer__right-menu-item">
+                                        <a href="company.html" class="footer__right-menu-link">О компании</a>
+                                    </li>
+                                    <li class="footer__right-menu-item">
+                                        <a href="payment.html" class="footer__right-menu-link">Оплата и доставка</a>
+                                    </li>
+                                    <li class="footer__right-menu-item">
+                                        <a href="reviews.html" class="footer__right-menu-link">Отзывы</a>
+                                    </li>
+                                    <li class="footer__right-menu-item">
+                                        <a href="vacancies.html" class="footer__right-menu-link">Вакансии</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__right-col">
+                                <a href="catalog.html" class="footer__right-title">Каталог</a>
+                                <ul class="footer__right-list">
+                                    <li class="footer__right-item">
+                                        <a href="" class="footer__right-link">Мягкие игрушки</a>
+                                    </li>
+                                    <li class="footer__right-item">
+                                        <a href="" class="footer__right-link">Тубы</a>
+                                    </li>
+                                    <li class="footer__right-item">
+                                        <a href="" class="footer__right-link">Подарки в картонной упаковке</a>
+                                    </li>
+                                    <li class="footer__right-item">
+                                        <a href="" class="footer__right-link">Подарки в жестяной упаковке</a>
+                                    </li>
+                                    <li class="footer__right-item">
+                                        <a href="" class="footer__right-link">Подарки в пакетах с Новогодним дизайном</a>
+                                    </li>
+                                    <li class="footer__right-item">
+                                        <a href="" class="footer__right-link">Текстиль/Рюкзачки</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__right-col">
+                                <div class="footer__right-contacts-info">
+                                    <ul class="footer__right-contacts">
+                                        <li class="footer__right-contacts-item">
+                                            <a href="" class="footer__right-contacts-link">+7 (8352) 36-83-71</a>
+                                        </li>
+                                        <li class="footer__right-contacts-item">
+                                            <a href="" class="footer__right-contacts-link">+7 (8352) 36-83-72</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="footer__right-contacts">
+                                        <li class="footer__right-contacts-item">
+                                            <a href="mailto:ng21@sladosti21.ru" class="footer__right-contacts-link footer__right-contacts-link--mail">ng21@sladosti21.ru</a>
+                                        </li>
+                                        <li class="footer__right-contacts-item">
+                                            <span class="footer__right-contacts-text">г. Чебоксары, пр.Мира, д.3 В</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="btn footer__callback">Заказать обратный звонок</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <ul class="footer__bottom-list">
+                        <li class="footer__bottom-item">
+                            <a href="" class="footer__bottom-link">
+                                <span>Политика конфиденциальности</span>
+                            </a>
+                        </li>
+                        <li class="footer__bottom-item">
+                            <span class="footer__bottom-text">© 2025 Интернет-магазин Сладкоежка – детские сладкие новогодние подарки</span>
+                        </li>
+                        <li class="footer__bottom-item">
+                            <a href="" class="footer__bottom-link">
+                                <span>Разработано в Hi-tech Media</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/libs/jquery.min.js"></script>
+    <script src="../assets/libs/swiper-bundle.min.js"></script>
+    <script src="../assets/libs/gsap.min.js"></script>
+    <script src="../assets/libs/scrolltrigger.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/swiper.js"></script>
+    <script src="../assets/js/gsap.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.catalog-menu {
+
+    &__wrapper {
+        position: relative;
+        min-height: 460px;
+        border-radius: 25px;
+        overflow: hidden;
+
+        padding: 32px 28px;
+
+        &::after {
+            content: '';
+            width: 0;
+            transition: width .2s;
+        }
+    }
+}

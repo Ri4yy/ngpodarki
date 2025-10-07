@@ -1,20 +1,126 @@
 .header {
     position: relative;
-    background: #fff;
+    z-index: 3;
+
+    &--secondary {
+        padding: 55px 0 65px;
+
+        @media(max-width: $breakpoint768) {
+            padding: 55px 0 36px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 40px 0 28px;
+        }
+
+        & .header__wrapper {
+            border-radius: 35px;
+        }
+    }
+    &--main {
+        padding: 55px 0 0;
+
+        @media(max-width: $breakpoint480) {
+            padding: 40px 0 0;
+        }
+
+        & .header__wrapper {
+            border-radius: 35px 35px 0 0;
+        }
+    }
 
     &__wrapper {
         position: relative;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 29px 0;
+        gap: 12px;
+
+        background: $red;
         z-index: 2;
 
-        @media(max-width: $breakpoint768) {
-            padding: 20px 0;
+        padding: 44px 68px 44px 0;
+
+        @media(max-width: $breakpoint1440) {
+            padding: 36px 32px 36px 0;
         }
-        @media(max-width: $breakpoint480) {
-            padding: 16px 0;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 0;
+
+        &-wrapper {
+            position: relative;
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                border-radius: 50%;
+            }
+
+            &::before {
+                top: -12px;
+                left: -12px;
+
+                box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+                background: $red;
+                width: calc(100% + 24px);
+                height: calc(100% + 24px);
+                z-index: -1;
+
+                
+                @media(max-width: $breakpoint480) {
+                    top: -8px;
+                    left: -8px;
+                    width: calc(100% + 16px);
+                    height: calc(100% + 16px);
+                }
+            }
+
+            &::after {
+                top: -32px;
+                left: -32px;
+
+                background: $white;
+                width: calc(100% + 64px);
+                height: calc(100% + 64px);
+                z-index: -2;
+                
+                @media(max-width: $breakpoint1280) {
+                    top: -28px;
+                    left: -28px;
+
+                    width: calc(100% + 56px);
+                    height: calc(100% + 56px);
+                }
+                @media(max-width: $breakpoint480) {
+                    top: -16px;
+                    left: -16px;
+
+                    width: calc(100% + 32px);
+                    height: calc(100% + 32px);
+                }
+            }
+
+            & img {
+                @media(max-width: $breakpoint1280) {
+                    width: 120px;
+                }
+                @media(max-width: $breakpoint480) {
+                    width: 75px;
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        @media(max-width: $breakpoint768) {
+            margin-left: auto;
         }
     }
 
@@ -22,15 +128,41 @@
         display: flex;
         flex-direction: column;
         align-items: end;
-    }
-    &__mail {
+        gap: 8px;
 
-    }
-    &__phone {
+        @media(max-width: $breakpoint480) {
+            display: none;
+        }
 
-    }
-}
+        &-phone {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 110%;
+            color: $white;
 
-.logo {
+            &:hover {
+                font-weight: 900;
+            }
     
+            @media(max-width: $breakpoint1280) {
+                font-size: 18px;
+            }
+            @media(max-width: $breakpoint1024) {
+                font-size: 16px;
+                z-index: 2;
+            }
+        }
+        &-callback {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 114%;
+            letter-spacing: 0.01em;
+            text-decoration: underline !important;
+            color: $white;
+
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+    }
 }

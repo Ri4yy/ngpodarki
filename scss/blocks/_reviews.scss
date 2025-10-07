@@ -1,0 +1,130 @@
+.reviews {
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 20px;
+    }
+
+    &__item {
+        position: relative;
+
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 25px;
+        background: $white;
+        height: 100%;
+
+        padding: 32px 22px;
+        transition: box-shadow 0.3s ease-in-out;
+
+        @media(max-width: $breakpoint1024) {
+            padding: 24px 16px;
+            gap: 12px;
+        }
+
+        &:hover {
+            box-shadow: unset;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+
+            background-image: url('/assets/img/decoration/review-tree.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            aspect-ratio: 161 / 139;
+            height: 139px;
+
+            @media(max-width: $breakpoint1024) {
+                height: 110px;
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            height: inherit;
+        }
+        &-top {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            &-name {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 135%;
+                color: $red;
+
+                @media(max-width: $breakpoint1024) {
+                    font-size: 15px;
+                }
+            }
+            &-date {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 136%;
+                color: #4e4e4e;
+
+                @media(max-width: $breakpoint1024) {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        &-body {
+            & p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 110%;
+                color: #4e4e4e;
+
+                @media(max-width: $breakpoint1024) {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &-bottom {
+            margin-top: auto;
+
+            &-link {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 136%;
+                text-decoration: underline !important;
+                color: rgba(185, 28, 32, 0.8);
+                transition: color 0.3s ease-in-out, 
+                            text-decoration 0.3s ease-in-out;
+
+                &:hover {
+                    color: rgba(185, 28, 32, 1);
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 28px;
+
+        display: flex;
+        justify-content: center;
+
+        & .swiper-pagination-template {
+            &:has(.swiper-button-lock) {
+                display: none;
+            }
+        }
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+        }
+    }
+}

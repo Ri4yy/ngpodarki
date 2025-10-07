@@ -1,0 +1,31 @@
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+
+    @media(max-width: $breakpoint1280) {
+        gap: 14px;
+    }
+
+    &__link {
+        display: flex;
+
+        & svg {
+            transition: all 0.3s ease-in-out;
+        }
+
+        & img {
+            @media(max-width: $breakpoint1280) {
+                width: 24px;
+            }
+        }
+
+        &:hover {
+            & svg {
+                opacity: .8;
+                transform: scale(1.05);
+            }
+        }
+    }
+}

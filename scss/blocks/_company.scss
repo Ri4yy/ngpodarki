@@ -1,0 +1,129 @@
+.company {
+    max-width: 1270px;
+    margin: 0 auto;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 90px;
+
+        @media(max-width: $breakpoint1024) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    &__left {
+        flex-shrink: 0;
+
+        &-image {
+            position: relative;
+
+            &::after {
+                content: '';
+
+                position: absolute;
+                left: -75px;
+                top: -10px;
+
+                z-index: 2;
+                rotate: -19deg;
+
+                background-image: url('/assets/img/decoration/company-tree.svg');
+                background-size: contain;
+                aspect-ratio: 264 / 267;
+                height: 200px;
+
+                @media(max-width: $breakpoint1024) {
+                    left: -60px;
+                    top: -35px;
+                    rotate: -9deg;
+                    height: 175px;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                border-radius: 50%;
+
+                top: -20px;
+                left: -20px;
+
+                box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+                background: $red;
+                width: calc(100% + 40px);
+                height: calc(100% + 40px);
+                z-index: 1;
+
+                @media(max-width: $breakpoint1024) {
+                    width: calc(100% + 32px);
+                    height: calc(100% + 32px);
+
+                    top: -16px;
+                    left: -16px;
+                }
+            }
+
+            & img {
+                position: relative;
+                z-index: 2;
+
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                border-radius: 50%;
+
+                @media(max-width: $breakpoint1024) {
+                    width: 240px;
+                }
+            }
+        }
+    }
+
+    &__right {
+
+        &-content {
+
+            &-text {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 130%;
+                color: #4e4e4e;
+
+                @media(max-width: $breakpoint1024) {
+                    font-size: 18px;
+                }
+                @media(max-width: $breakpoint768) {
+                    font-size: 16px;
+                }
+
+                & span {
+                    font-weight: 700;
+                    color: #9f1015;
+                }
+            }
+
+            &-bottom {
+                margin-top: 24px;
+
+                @media(max-width: $breakpoint1024) {
+                    margin-top: 14px;
+                }
+
+                &-link {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 135%;
+                    text-decoration: underline !important;
+                    color: #9f1014;
+                    transition: font-weight 0.1s ease;
+
+                    &:hover {
+                        font-weight: 700;
+                        text-decoration: none !important;
+                    }
+                }
+            }
+        }
+    }
+}

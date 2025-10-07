@@ -1,0 +1,119 @@
+.section {
+    position: relative;
+
+    padding: 40px 0;
+
+    @media(max-width: $breakpoint768) {
+        padding: 36px 0;
+    }
+    @media(max-width: $breakpoint480) {
+        padding: 28px 0;
+    }
+
+    &--breadcrumb {
+        padding: 0 0 24px 0;
+    }
+
+    &--company-messages {
+        padding: 80px 0;
+
+        @media(max-width: $breakpoint768) {
+            padding: 36px 0 62px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 28px 0 44px;
+        }
+    }
+
+    &--dark-bg {
+        background: $grey;
+        
+    }
+
+    &--composition {
+        padding: 40px 0 70px;
+
+        @media(max-width: $breakpoint768) {
+            padding: 36px 0 80px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 28px 0 56px;
+        }
+    }
+
+    &--review {
+        padding: 80px 0;
+
+        @media(max-width: $breakpoint768) {
+            padding: 36px 0 72px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 28px 0 64px;
+        }
+    }
+
+    &--form-feedback {
+        padding: 80px 0 40px;
+
+        @media(max-width: $breakpoint768) {
+            padding: 36px 0;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 28px 0;
+        }
+    }
+
+    &--catalog {
+        padding: 40px 0 80px;
+
+        @media(max-width: $breakpoint768) {
+            padding: 36px 0;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 28px 0;
+        }
+    }
+
+    &--catalog-detail {
+        padding: 40px 0 80px;
+
+        @media(max-width: $breakpoint480) {
+            padding: 28px 0 56px;
+        }
+    }
+
+    &--partners {
+        padding: 40px 0 160px;
+
+        @media(max-width: $breakpoint768) {
+            padding: 36px 0 72px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 28px 0 56px;
+        }
+    }
+
+    &--hero {
+        padding: 0 0 40px;
+
+        @media(max-width: $breakpoint480) {
+            padding: 0 0 28px;
+        }
+    }
+
+    &--timer {
+        position: relative;
+        
+        padding: 40px 0 80px;
+
+        @media(max-width: $breakpoint768) {
+            padding: 26px 0 72px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 24px 0 32px;
+        }
+    }
+}
+
+
+ 

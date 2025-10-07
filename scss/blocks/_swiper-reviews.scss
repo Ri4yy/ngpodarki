@@ -1,0 +1,28 @@
+.swiper-reviews {
+    padding: 30px !important;
+    margin: -30px !important;
+
+    &__item {
+        height: auto !important;
+        
+        &:nth-child(odd) {
+            & .reviews__item {
+                &::before {
+                    rotate: 17deg;
+                    right: -32px;
+                    top: -40px;
+                }
+            }
+        }
+        &:nth-child(even) {
+            & .reviews__item {
+                &::before {
+                    rotate: -38deg;
+                    right: -35px;
+                    top: auto;
+                    bottom: -45px;
+                }
+            }
+        }
+    }
+}

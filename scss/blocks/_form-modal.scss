@@ -1,0 +1,46 @@
+.form-modal {
+    margin-top: 20px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__item {
+        &-input {
+            border: 1px solid rgba(0, 0, 0, 0.25) !important;
+        }
+        &-textarea {
+            border: 1px solid rgba(0, 0, 0, 0.25) !important;
+        }
+    }
+
+    &__bottom {
+        margin-top: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        @media(max-width: $breakpoint480) {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+
+    &__btn {
+        padding: 8px 44px;
+        border-radius: 30px;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.25);
+        background: #f9f9f9;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 137%;
+        text-align: center;
+        color: #9f1014;
+    }
+}

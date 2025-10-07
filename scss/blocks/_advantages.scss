@@ -1,0 +1,148 @@
+.advantages {
+    margin-top: 88px;
+
+    &__wrapper {
+        position: relative;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 16px;
+        row-gap: 32px;
+
+        @media(max-width: $breakpoint1024) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media(max-width: $breakpoint600) {
+            grid-template-columns: 1fr;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+        }
+        &::before {
+            content: '';
+            top: -120px;
+            left: -140px;
+            background-image: url('/assets/img/decoration/adv-tree-left.png');
+            aspect-ratio: 386 / 200;
+            height: 200px;
+            background-size: contain;
+
+            @media(max-width: $breakpoint1280) {
+                height: 140px;
+                top: -90px;
+                left: -40px;
+            }
+            @media(max-width: $breakpoint768) {
+                height: 120px;
+            }
+        }
+        &::after {
+            content: '';
+            bottom: -140px;
+            right: -84px;
+
+            background-image: url('/assets/img/decoration/adv-tree-right.png');
+            aspect-ratio: 412 / 218;
+            height: 218px;
+            background-size: contain;
+
+            @media(max-width: $breakpoint1280) {
+                height: 140px;
+                bottom: -85px;
+                right: -30px;
+            }
+            @media(max-width: $breakpoint768) {
+                height: 120px;
+            }
+            @media(max-width: $breakpoint480) {
+                height: 100px;
+                bottom: -65px;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+
+        @media(max-width: $breakpoint1280) {
+            gap: 28px;
+        }
+
+        &-left {
+            position: relative;
+            flex-shrink: 0;
+
+            width: 126px;
+            height: 126px;
+
+            background: $grey;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 50%;
+            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+            transition: box-shadow 0.3s ease-in-out;
+
+            @media(max-width: $breakpoint1280) {
+                width: 100px;
+                height: 100px;
+            }
+            @media(max-width: $breakpoint768) {
+                width: 68px;
+                height: 68px;
+            }
+
+            &-icon {
+                position: absolute;
+                right: -25px;
+                bottom: -16px;
+
+                @media(max-width: $breakpoint1280) {
+                    max-height: 105px;
+                    right: -15px;
+                }
+                @media(max-width: $breakpoint768) {
+                    max-height: 68px;
+                    bottom: -10px;
+                    right: -10px;
+                }
+            }
+        }
+        &-right {
+            & span {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 100%;
+                color: #4e4e4e;
+
+                @media(max-width: $breakpoint1280) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &:hover {
+            & .advantages__item-left {
+                box-shadow: unset;
+            }
+            &:hover .advantages__item-left-icon {
+                animation: hero-adv-bounce 0.8s cubic-bezier(.68,-0.55,.27,1.55);
+            }
+        }
+    }
+}
+
+@keyframes hero-adv-bounce {
+    0%   { transform: scaleX(1) scaleY(1); }
+    15%  { transform: scaleX(1.18) scaleY(0.82); }
+    30%  { transform: scaleX(0.92) scaleY(1.12); }
+    45%  { transform: scaleX(1.13) scaleY(0.87); }
+    60%  { transform: scaleX(0.97) scaleY(1.06); }
+    75%  { transform: scaleX(1.06) scaleY(0.94); }
+    90%  { transform: scaleX(1) scaleY(1); }
+    100% { transform: scaleX(1) scaleY(1); }
+}

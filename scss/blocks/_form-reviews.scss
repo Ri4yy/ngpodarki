@@ -1,0 +1,28 @@
+.form-reviews {
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__bottom {
+        margin-top: 20px;
+    }
+    &__btn {
+        padding: 8px 44px;
+        box-shadow: 0 5px 10px 0 rgba(186, 23, 71, 0.3);
+        background: $white;
+        border-radius: 30px;
+
+        & span {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 137%;
+            text-align: center;
+            color: $red;
+        }
+    }
+}

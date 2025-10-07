@@ -1,0 +1,74 @@
+.product-composition-image {
+    &__wrapper {
+        display: block;
+        position: relative;
+        border-radius: 30px;
+        background: $white;
+        padding: 30px 92px;
+
+        @media(max-width: $breakpoint1024) {
+            padding: 70px 8px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 38px 4px;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+        }
+        &::before {
+            content: '';
+            top: -104px;
+            left: -90px;
+
+            aspect-ratio: 386 / 200;
+            background-image: url('/assets/img/decoration/adv-tree-left.png');
+            height: 200px;
+
+            @media(max-width: $breakpoint1024) {
+                top: -75px;
+                height: 160px;
+                background-size: contain;
+            }
+            @media(max-width: $breakpoint768) {
+                top: -54px;
+                height: 140px;
+            }
+            @media(max-width: $breakpoint480) {
+                top: -44px;
+                height: 120px;
+            }
+        }
+        &::after {
+            content: '';
+            bottom: -110px;
+            right: -84px;
+
+            aspect-ratio: 412 / 218;
+            background-image: url('/assets/img/decoration/adv-tree-right.png');
+            height: 218px;
+
+            @media(max-width: $breakpoint1024) {
+                bottom: -75px;
+                height: 180px;
+                background-size: contain;
+            }
+            @media(max-width: $breakpoint768) {
+                bottom: -52px;
+                height: 145px;
+            }
+            @media(max-width: $breakpoint480) {
+                right: -50px;
+                bottom: -50px;
+                height: 120px;
+            }
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}

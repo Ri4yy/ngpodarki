@@ -1,0 +1,50 @@
+.form-hero {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 14px;
+        row-gap: 10px;
+
+        @media(max-width: $breakpoint600) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+
+        &:last-child {
+            grid-column: 1 / -1;
+        }
+    }
+
+    &__bottom {
+        margin-top: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+
+        @media(max-width: $breakpoint600) {
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+    &__btn {
+        padding: 8px 44px;
+        border-radius: 30px;
+        box-shadow: 0 5px 10px 0 rgba(186, 23, 71, 0.3);
+        background: $white;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 137%;
+        text-align: center;
+        color: #9f1014;
+    }
+    &__agree {
+        & span {
+            line-height: 1 !important;
+        }
+    }
+}

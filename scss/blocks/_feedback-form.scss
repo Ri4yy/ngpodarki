@@ -1,0 +1,86 @@
+.feedback-form {
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+
+        padding: 56px 32px 56px 0;
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 25px;
+        background-color: $red;
+
+        @media(max-width: $breakpoint1024) {
+            padding: 44px 28px 380px 28px;
+
+            background-image: url('/assets/img/photo/form-1.png');
+            background-size: 650px;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+        }
+        @media(max-width: $breakpoint768) {
+            background-image: url('/assets/img/photo/form-1-md.png');
+            background-size: 100%;
+        }
+        @media(max-width: $breakpoint600) {
+            padding-bottom: 300px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 40px 16px 250px 16px;
+        }
+        @media(max-width: $breakpoint375) {
+            padding-bottom: 180px;
+        }
+        
+
+        &-title {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 121%;
+            text-align: start;
+            color: $white;
+
+            @media(max-width: $breakpoint600) {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        &-text {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 121%;
+            color: #fffcf7;
+
+            @media(max-width: $breakpoint600) {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+        &-form {
+            margin-top: 20px;
+        }
+
+        &-image {
+            width: 54%;
+            position: absolute;
+            bottom: 0;
+            left: -32px;
+            z-index: 1;
+            pointer-events: none;
+
+            @media(max-width: $breakpoint1024) {
+                display: none;
+            }
+        }
+        &-content {
+            width: 48%;
+            margin-left: auto;
+            z-index: 2;
+            
+            @media(max-width: $breakpoint1024) {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}

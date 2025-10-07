@@ -1,0 +1,119 @@
+.reviews-form {
+    display: flex;
+    justify-content: center;
+
+    @media(max-width: $breakpoint1024) {
+        margin-left: 86px;
+    }
+    @media(max-width: $breakpoint600) {
+        margin-left: 0;
+    }
+
+    &__wrapper {
+        position: relative;
+        
+        max-width: 925px;
+        width: 100%;
+
+        &::before, &::after {
+            content: url('/assets/img/decoration/form-tree.svg');
+            position: absolute;
+            z-index: 2;
+            pointer-events: none;
+        }
+        &:before {
+            bottom: 0;
+            left: -146px;
+            rotate: -43deg;
+
+            @media(max-width: $breakpoint768) {
+                top: 0;
+                bottom: auto;
+            }
+            @media(max-width: $breakpoint600) {
+                content: '';
+            }
+        }
+        &::after {
+            right: -146px;
+            bottom: 12px;
+            rotate: -137deg;
+            transform: scale(1, -1);
+
+            @media(max-width: $breakpoint1024) {
+                content: '';
+            }
+        }
+    }
+    &__inner {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 25px;
+        background: $red;
+        padding: 48px 0 48px 96px;
+
+        @media(max-width: $breakpoint768) {
+            padding: 62px 90px 132px;
+        }
+        @media(max-width: $breakpoint600) {
+            padding: 27px 16px 190px;
+        }
+
+        &-content {
+            width: 60%;
+
+            @media(max-width: $breakpoint768) {
+                width: 100%;
+            }
+            
+            &-title {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 121%;
+                color: $white;
+
+                @media(max-width: $breakpoint768) {
+                    font-size: 24px;
+                }
+                @media(max-width: $breakpoint480) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &-form {
+            margin-top: 20px;
+        }
+
+        &-image {
+            position: absolute;
+            right: -80px;
+            bottom: -10px;
+            z-index: 3;
+
+            @media(max-width: $breakpoint1024) {
+                scale: -1 1;
+                right: 0;
+                bottom: -30px;
+            }
+            @media(max-width: $breakpoint600) {
+                bottom: 10px;
+            }
+
+            & img {
+
+                @media(max-width: $breakpoint1024) {
+                    height: 225px;
+                }
+                @media(max-width: $breakpoint600) {
+                    height: 170px;
+                }
+            }
+        }
+    }
+    
+}

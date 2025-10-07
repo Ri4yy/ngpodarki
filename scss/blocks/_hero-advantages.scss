@@ -1,0 +1,109 @@
+.hero-advantages {
+    margin-top: 40px;
+
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 25px;
+    background: $red;
+
+    
+    @media(max-width: $breakpoint768) {
+        margin-top: 16px;
+    }
+    @media(max-width: $breakpoint480) {
+        margin-top: 12px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 24px;
+        align-items: center;
+
+        height: 125px;
+
+        @media(max-width: $breakpoint1440) {
+            grid-template-columns: repeat(2, auto);
+            height: auto;
+        }
+        @media(max-width: $breakpoint1024) {
+            padding: 10px 52px;
+        }
+        @media(max-width: $breakpoint768) {
+            column-gap: 16px;
+        }
+        @media(max-width: $breakpoint600) {
+            padding: 14px 40px;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        height: inherit;
+
+        @media(max-width: $breakpoint600) {
+            gap: 40px;
+        }
+        @media(max-width: $breakpoint375) {
+            gap: 20px;
+        }
+
+        &-image {
+            transform: translateY(-12px);
+            flex-shrink: 0;
+
+            @media(max-width: $breakpoint1440) {
+                display: flex;
+                justify-content: center;
+
+                transform: translateY(0);
+                width: 190px;
+            }
+            @media(max-width: $breakpoint1024) {
+                width: 110px;
+            }
+            @media(max-width: $breakpoint480) {
+                width: 90px;
+            } 
+        }
+        &-content {
+            & span {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 120%;
+                color: $white;
+                
+                @media(max-width: $breakpoint1024) {
+                    font-size: 16px;
+                }
+                @media(max-width: $breakpoint375) {
+                    font-size: 14px;
+                }
+
+                & br {
+                    @media(max-width: $breakpoint600) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &:hover .hero-advantages__item-image img {
+            animation: hero-adv-bounce 0.8s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+    }
+}
+
+@keyframes hero-adv-bounce {
+    0%   { transform: scaleX(1) scaleY(1); }
+    15%  { transform: scaleX(1.18) scaleY(0.82); }
+    30%  { transform: scaleX(0.92) scaleY(1.12); }
+    45%  { transform: scaleX(1.13) scaleY(0.87); }
+    60%  { transform: scaleX(0.97) scaleY(1.06); }
+    75%  { transform: scaleX(1.06) scaleY(0.94); }
+    90%  { transform: scaleX(1) scaleY(1); }
+    100% { transform: scaleX(1) scaleY(1); }
+}

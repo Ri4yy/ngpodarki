@@ -1,0 +1,122 @@
+.company-messages {
+    position: relative;
+
+    &__wrapper {
+        max-width: 1050px;
+        width: 74%;
+
+        @media(max-width: $breakpoint1024) {
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        overflow: hidden;
+
+        border-radius: 30px;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.25);
+        background: #fff;
+        padding: 46px 88px 40px; 
+
+        @media(max-width: $breakpoint1024) {
+            padding: 38px 60px 260px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 40px 14px 300px;
+        }
+
+        &::before,
+        &::after {
+            position: absolute;
+            pointer-events: none;
+            z-index: 1;
+        }
+        &::before {
+            content: url('/assets/img/decoration/snowflake-left.svg');
+            top: 0;
+            left: 0;
+
+            @media(max-width: $breakpoint480) {
+                content: none;
+            }
+        }
+        &::after {
+            content: url('/assets/img/decoration/snowflake-right.svg');
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        color: $red;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 20px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 18px;
+        }
+    }
+
+    &__content {
+        margin-top: 26px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 16px;
+        }
+    }
+    &__text {
+        position: relative;
+        z-index: 2;
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #4e4e4e;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+        }
+
+        & span {
+            font-weight: 600;
+        }
+        & a {
+            font-weight: 600;
+            color: #b81d20;
+        }
+        & span.company-messages__text-bold {
+            font-weight: 500;
+            color: #b91d21;
+        }
+    }
+
+    &__image {
+        width: 33%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+
+        @media(max-width: $breakpoint1024) {
+            min-width: 270px;
+
+            top: auto;
+            transform: translateY(0);
+            bottom: -80px;
+        }
+        @media(max-width: $breakpoint600) {
+            min-width: 0;
+            width: 210px;
+            bottom: -40px;
+        }
+    }
+}

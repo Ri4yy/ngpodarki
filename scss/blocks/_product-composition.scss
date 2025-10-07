@@ -1,0 +1,52 @@
+.product-composition {
+
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        @media(max-width: $breakpoint600) {
+            align-items: flex-start;
+            overflow-x: auto;
+            border-radius: 10px;
+        }
+
+        &-inner {
+            gap: 20px;
+    
+            max-width: 820px;
+            width: 100%;
+    
+            @media(max-width: $breakpoint600) {
+                width: 540px;
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 36px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 28px;
+        }
+
+        &-btn {
+            font-weight: 600;
+            font-size: 20px;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            text-align: center;
+            color: $dark-red;
+
+            @media(max-width: $breakpoint480) {
+                font-size: 16px;
+            }
+        }
+    }
+}

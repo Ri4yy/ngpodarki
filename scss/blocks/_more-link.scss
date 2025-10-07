@@ -1,0 +1,39 @@
+.more-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &:hover {
+        & .more-link__text {
+            color: $red;
+        }
+        & .more-link__icon {
+            transform: translateX(3px);
+            fill: $red;
+        }
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: $dark-red;
+
+        transition: color .3s ease-in-out;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+        }
+    }
+    &__icon {
+        fill: $dark-red;
+        transition: fill .3s, transform .3s;
+
+        @media(max-width: $breakpoint480) {
+            height: 13px;
+        }
+    }
+}   

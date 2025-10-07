@@ -1,0 +1,92 @@
+.promo {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    &__item {
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        overflow: hidden;
+
+        & img {
+            border-radius: inherit;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    &__bottom {
+        position: relative;
+        padding-top: 172px;
+
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+
+        @media(max-width: $breakpoint1280) {
+            padding-top: 120px;
+        }
+        @media(max-width: $breakpoint768) {
+            padding-top: 90px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding-top: 60px;
+        }
+
+        &::after,   
+        &::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            aspect-ratio: 624 / 170;
+            height: 170px;
+            background-size: contain !important;
+
+            @media(max-width: $breakpoint1280) {
+                height: 130px;
+                top: -20px;
+            }
+            @media(max-width: $breakpoint1024) {
+                height: 100px;
+            }
+            @media(max-width: $breakpoint768) {
+                height: 80px;
+            }
+            @media(max-width: $breakpoint600) {
+                height: 60px;
+            }
+            @media(max-width: $breakpoint480) {
+                height: 40px;
+            }
+        }
+        &::before {
+            background: url('/assets/img/decoration/promo-tree-left.svg') no-repeat;
+            right: 50%;
+        }
+        &::after {
+            background: url('/assets/img/decoration/promo-tree-right.svg') no-repeat;
+            left: 50%;
+        }
+    }
+
+    &__pagination {
+        margin-top: 28px;
+
+        display: flex;
+        justify-content: center;
+
+        &:has(.swiper-button-lock) {
+            display: none;
+        }
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 24px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 18px;
+        }
+    }
+}

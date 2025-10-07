@@ -3,11 +3,14 @@
     align-items: center;
     gap: 40px;
 
-    @media(max-width: $breakpoint1280) {
-        gap: 16px;
+    @media(max-width: $breakpoint1440) {
+        gap: 20px;
+    }
+    @media(max-width: 1160px) {
+        gap: 10px;
     }
     @media(max-width: $breakpoint1024) {
-        gap: 6px;
+        display: none;
     }
 
     &__item {
@@ -16,16 +19,49 @@
 
     &__link {
         display: block;
+        
         font-weight: 500;
-        font-size: 18px;
-        color: $main-text;
+        font-size: 20px;
+        line-height: 150%;
+        color: $white;
 
-        @media(max-width: $breakpoint1024) {
-            font-size: 16px;
+        @media(max-width: $breakpoint1280) {
+            font-size: 18px;
+        }
+        @media(max-width: 1220px) {
+            font-size: 15px;
         }
 
         &--active {
-            color: $main-color;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            border-radius: 10px;
+            padding: 10px 20px;
+            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+            background: $white;
+            
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: capitalize;
+            text-align: center;
+            color: $red;
+
+            transition: all .3s;
+
+            @media(max-width: $breakpoint1280) {
+                font-size: 18px;
+                padding: 10px 16px;
+            }
+            @media(max-width: 1220px) {
+                font-size: 15px;
+            }
+
+            & svg {
+                fill: $red;
+                transition: all .3s;
+            }
         }
     }
 }

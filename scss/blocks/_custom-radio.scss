@@ -4,7 +4,7 @@
         display: none;
 
         &:checked + label:before {
-            background: url(../assets/img/icons/radio-2.png) 0 0 no-repeat;
+            background: url("/assets/img/icons/radio-2.png") 0 0 no-repeat;
         }
         &:disabled + label:before {
             filter: grayscale(100%);
@@ -28,7 +28,7 @@
             position: absolute;
             left: 0;
             bottom: 1px;
-            background: url(../assets/img/icons/radio-1.png) 0 0 no-repeat;
+            background: url("/assets/img/icons/radio-1.png") 0 0 no-repeat;
         }
         &:hover {
             &::before {

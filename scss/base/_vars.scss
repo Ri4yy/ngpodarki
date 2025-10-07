@@ -1,19 +1,29 @@
 // color
-$main-color: #548235;
+$main-color: #B91C20;
 $accent-color: #D4E1BD;
 $secondary-color: #11332A; 
 $main-text: #3A3737;
 
+$red: #B91C20;
+$dark-red: #D1212E;
+$grey: #E6E6E6;
+$white: #f9f9f9;
+
 // breakpoint 
 $breakpoint1440: 1440 + px;
 $breakpoint1280: 1280 + px;
+$breakpoint1248: 1248 + px;
+$breakpoint1180: 1180 + px;
 $breakpoint1024: 1024 + px;
+$breakpoint992: 992 + px;
 $breakpoint768: 768 + px;
+$breakpoint600: 600 + px;
 $breakpoint480: 480 + px;
 $breakpoint375: 375 + px;
 
 // font-family
-$font-family: '';
+$font-family: 'Montserrat', sans-serif;
+$second-family: 'Unbounded', sans-serif;
 
 // border-radius
 $main-radius: 35px;
@@ -23,3 +33,4 @@ $container-width: 1440px;
 $section-top: 100px;
 $padding-md: 24px;
 $padding-sm: 16px;
+ 
