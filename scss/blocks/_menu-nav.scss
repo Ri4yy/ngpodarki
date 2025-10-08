@@ -63,5 +63,10 @@
                 transition: all .3s;
             }
         }
+
+        &.active {
+            font-weight: 700;
+            text-decoration: underline;
+        }
     }
 }

@@ -999,6 +999,10 @@ h2 {
   fill: #B91C20;
   transition: all 0.3s;
 }
+.menu-nav__link.active {
+  font-weight: 700;
+  text-decoration: underline;
+}
 
 .btn-decoration {
   position: relative;
@@ -1284,8 +1288,8 @@ h2 {
 }
 
 .swiper-promo {
-  padding: 30px;
-  margin: -30px;
+  padding: 30px !important;
+  margin: -30px !important;
 }
 
 .more-link {
@@ -2798,7 +2802,7 @@ h2 {
 }
 .footer__bottom-link {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 114%;
   text-decoration: underline !important;
   color: #4e4e4e;
