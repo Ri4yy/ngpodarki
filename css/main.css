@@ -810,6 +810,7 @@ h2 {
   }
 }
 .form-modal__btn {
+  flex-shrink: 0;
   padding: 8px 44px;
   border-radius: 30px;
   box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.25);
@@ -1014,6 +1015,7 @@ h2 {
   transform: scale(0.5);
   transition: opacity 0.5s, transform 0.5s;
   transition-delay: 0s;
+  pointer-events: none;
 }
 .btn-decoration__icon:nth-child(1) {
   top: 0;
@@ -1331,6 +1333,9 @@ h2 {
   }
 }
 
+.catalog-sections {
+  position: relative;
+}
 .catalog-sections__inner {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -1353,6 +1358,57 @@ h2 {
     row-gap: 20px;
   }
 }
+.catalog-sections__btns {
+  display: contents;
+}
+@media (max-width: 1500px) {
+  .catalog-sections__btns {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 1500px) and (max-width: 768px) {
+  .catalog-sections__btns {
+    margin-top: 20px;
+  }
+}
+.catalog-sections__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+.catalog-sections__btn svg {
+  fill: #9F1014;
+}
+@media (max-width: 768px) {
+  .catalog-sections__btn svg {
+    width: 15px;
+  }
+}
+.catalog-sections__btn-prev {
+  left: -30px;
+}
+.catalog-sections__btn-next {
+  right: -30px;
+}
+.catalog-sections__btn.swiper-button-disabled svg {
+  opacity: 0.5;
+}
+@media (max-width: 1500px) {
+  .catalog-sections__btn {
+    position: relative;
+    top: unset;
+    transform: unset;
+    left: unset;
+    right: unset;
+  }
+}
+
 .catalog-section {
   display: flex;
   flex-direction: column;
@@ -2073,6 +2129,11 @@ h2 {
   }
 }
 .reviews__item-body p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: max-height 0.3s;
   font-weight: 400;
   font-size: 20px;
   line-height: 110%;
@@ -2082,6 +2143,12 @@ h2 {
   .reviews__item-body p {
     font-size: 15px;
   }
+}
+.reviews__item-body p.is-active {
+  -webkit-line-clamp: unset;
+  max-height: none;
+  display: block;
+  overflow: visible;
 }
 .reviews__item-bottom {
   margin-top: auto;
@@ -3502,6 +3569,9 @@ h2 {
     font-size: 14px;
     padding: 6px 18px;
   }
+}
+.product-card__info-btn span {
+  pointer-events: none;
 }
 
 .product-card-status {

@@ -143,7 +143,7 @@ const catalogSectionsSwiper = new Swiper('.catalog-sections-swiper', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.catalog-swiper__btn--next',
-      prevEl: '.catalog-swiper__btn--prev',
+      nextEl: '.catalog-sections__btn-next',
+      prevEl: '.catalog-sections__btn-prev',
     },
 });

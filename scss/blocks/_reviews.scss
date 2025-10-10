@@ -78,6 +78,12 @@
 
         &-body {
             & p {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                transition: max-height 0.3s;
+
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 110%;
@@ -85,6 +91,13 @@
 
                 @media(max-width: $breakpoint1024) {
                     font-size: 15px;
+                }
+
+                &.is-active {
+                    -webkit-line-clamp: unset;
+                    max-height: none;
+                    display: block;
+                    overflow: visible;
                 }
             }
         }

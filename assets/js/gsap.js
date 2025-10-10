@@ -10,29 +10,6 @@ if (typeof gsap !== 'undefined') {
         return window.innerWidth > 991;
     }
 
-    // Header intro animation
-    (function () {
-        if (!isDesktop()) return;
-        const menuItems = document.querySelectorAll('.menu-nav > li');
-        const contacts = document.querySelector('.header__contacts');
-        if (!menuItems || menuItems.length === 0) return;
-
-        const tl = gsap.timeline();
-        gsap.set(menuItems, { y: -16, autoAlpha: 0 });
-        if (contacts) gsap.set(contacts, { autoAlpha: 0 });
-
-        tl.to(menuItems, {
-            y: 0,
-            autoAlpha: 1,
-            stagger: 0.08,
-            duration: 0.8
-        });
-
-        if (contacts) {
-            tl.to(contacts, { autoAlpha: 1, duration: 0.4 }, '+=0.05');
-        }
-    })();
-
     // Hero title typing animation
     (function () {
         if (!isDesktop()) return;

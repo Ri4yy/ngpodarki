@@ -170,6 +170,10 @@
                 font-size: 14px;
                 padding: 6px 18px;
             }
+
+            & span {
+                pointer-events: none;
+            }
         }
     }
 }

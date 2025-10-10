@@ -94,5 +94,18 @@ document.addEventListener('DOMContentLoaded', () => {
         flake.style.animationDuration = `${duration}s`;
     });
 
-
+    document.querySelectorAll('.reviews__item-bottom-link').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const reviewItem = this.closest('.reviews__item');
+            const reviewText = reviewItem.querySelector('.reviews__item-body p');
+    
+            if (reviewText.classList.contains('is-active')) {
+                reviewText.classList.remove('is-active');
+                this.textContent = 'Читать полностью';
+            } else {
+                reviewText.classList.add('is-active');
+                this.textContent = 'Скрыть';
+            }
+        });
+    });
 })
