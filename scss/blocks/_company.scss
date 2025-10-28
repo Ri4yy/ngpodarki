@@ -5,11 +5,11 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         gap: 90px;
 
         @media(max-width: $breakpoint1024) {
             flex-direction: column;
+            align-items: center;
             gap: 40px;
         }
     }
@@ -118,12 +118,31 @@
                     color: #9f1014;
                     transition: font-weight 0.1s ease;
 
+                    &.active {
+                        color: #4e4e4e;
+                    }
+
                     &:hover {
                         font-weight: 700;
                         text-decoration: none !important;
                     }
                 }
             }
+        }
+    }
+
+    &__img {
+        margin-top: 24px;
+
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+
+        & img {
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            max-width: 336px;
         }
     }
 }

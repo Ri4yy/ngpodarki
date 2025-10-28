@@ -147,3 +147,37 @@ const catalogSectionsSwiper = new Swiper('.catalog-sections-swiper', {
       prevEl: '.catalog-sections__btn-prev',
     },
 });
+
+const swiperDeclaration = new Swiper('.swiper-declaration', {
+    // Optional parameters
+    spaceBetween: 20,
+    enabled: true,
+
+    breakpoints: {
+        0: {
+            allowTouchMove: true,
+            slidesPerView: 1
+        },
+        481: {
+            allowTouchMove: true,
+            slidesPerView: 2
+        },
+        769: {
+            allowTouchMove: true,
+            slidesPerView: 3
+        },
+        1025: {
+            allowTouchMove: true,
+            slidesPerView: 4
+        },
+        1921: {
+            allowTouchMove: true,
+            slidesPerView: 5
+        },
+    },
+  
+    navigation: {
+      nextEl: '.declaration__btns-btn-next',
+      prevEl: '.declaration__btns-btn-prev',
+    },
+});

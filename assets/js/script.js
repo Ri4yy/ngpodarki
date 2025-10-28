@@ -108,4 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    const companyMoreBtn = document.querySelector('.company__right-content-bottom-link');
+    const companyImg = document.querySelector('.company__img');
+
+    companyMoreBtn.addEventListener('click', (e) => {
+        companyImg.classList.toggle('active');
+        e.target.classList.toggle('active');
+    })
 })

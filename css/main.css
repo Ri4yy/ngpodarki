@@ -1789,12 +1789,12 @@ h2 {
 .company__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 90px;
 }
 @media (max-width: 1024px) {
   .company__wrapper {
     flex-direction: column;
+    align-items: center;
     gap: 40px;
   }
 }
@@ -1891,9 +1891,23 @@ h2 {
   color: #9f1014;
   transition: font-weight 0.1s ease;
 }
+.company__right-content-bottom-link.active {
+  color: #4e4e4e;
+}
 .company__right-content-bottom-link:hover {
   font-weight: 700;
   text-decoration: none !important;
+}
+.company__img {
+  margin-top: 24px;
+  display: none;
+}
+.company__img.active {
+  display: flex;
+}
+.company__img img {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  max-width: 336px;
 }
 
 .company-messages {
@@ -5128,6 +5142,91 @@ h2 {
 }
 .policy__item a {
   color: #B91C20;
+}
+
+.declaration__wrapper {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 25px;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.25);
+  background: #f9f9f9;
+  padding: 36px 30px;
+}
+@media (max-width: 768px) {
+  .declaration__wrapper {
+    padding: 28px 24px;
+  }
+}
+@media (max-width: 600px) {
+  .declaration__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .declaration__wrapper {
+    padding: 20px;
+    gap: 20px;
+  }
+}
+.declaration__wrapper-slider {
+  order: 2;
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .declaration__wrapper-slider {
+    order: 1;
+  }
+}
+.declaration__btns {
+  display: contents;
+}
+@media (max-width: 600px) {
+  .declaration__btns {
+    display: flex;
+    gap: 24px;
+    order: 2;
+  }
+}
+.declaration__btns-btn {
+  cursor: pointer;
+}
+.declaration__btns-btn svg {
+  fill: #9F1014;
+}
+@media (max-width: 480px) {
+  .declaration__btns-btn svg {
+    width: 16px;
+  }
+}
+.declaration__btns-btn.swiper-button-disabled svg {
+  fill: #4E4E4E;
+}
+.declaration__btns-btn.swiper-button-lock {
+  display: block;
+}
+.declaration__btns-btn-prev {
+  order: 1;
+}
+.declaration__btns-btn-next {
+  order: 3;
+}
+
+.swiper-declaration {
+  padding: 15px !important;
+  margin: -15px !important;
+}
+.swiper-declaration__img {
+  display: flex;
+}
+.swiper-declaration__img img {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .custom-checkbox {
