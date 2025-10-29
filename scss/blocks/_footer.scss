@@ -321,6 +321,33 @@
         }
     }
 
+    &__payment-methods {
+        margin-top: 28px;
+        margin-right: 62px;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 24px;
+            margin-right: 0;
+        }
+        @media(max-width: $breakpoint600) {
+            margin-top: 12px;
+        }
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            flex-wrap: wrap;
+            gap: 18px;
+
+            @media(max-width: $breakpoint1024) {
+                justify-content: center;
+            }
+            @media(max-width: $breakpoint600) {
+                gap: 12px;
+            }
+        }
+    }
     &__bottom {
         margin-top: 28px;
 

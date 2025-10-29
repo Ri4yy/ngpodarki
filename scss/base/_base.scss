@@ -10,11 +10,10 @@ body {
  
 // Заголовки
 h1 {
-    font-family: $second-family;
     font-weight: 400;
     font-size: 40px;
 }
-h2 {
+h2, .h2 {
     font-weight: 700;
     font-size: 48px;
     line-height: 179%;

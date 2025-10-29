@@ -1,0 +1,46 @@
+.modal-declaration {
+    $modal-width: 1440px;
+    $modal-height: auto;
+
+    &__body {
+        height: $modal-height;
+        max-width: $modal-width;
+        width: 100%;
+
+        @media(max-width: calc($modal-width + 20px)) {
+            max-width: 98vw;
+        }
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__close {
+        display: flex;
+        position: absolute;
+        top: 38px;
+        right: 32px;
+    
+        @media(max-width: $breakpoint768) {
+            width: 28px;
+            top: 40px;
+            right: 32px;
+        }
+        @media(max-width: $breakpoint480) {
+            width: 22px;
+            top: 20px;
+            right: 16px;
+        }
+        @media(max-width: $breakpoint375) {
+            width: 16px;
+            top: 20px;
+        }
+    }
+
+    & .declaration__wrapper {
+        padding: 96px 30px 46px;
+
+        @media(max-width: $breakpoint480) {
+            padding: 56px 20px 32px;
+        }
+    }
+}
